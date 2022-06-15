@@ -1,0 +1,6 @@
+project(dump)
+cmake_minimum_required(VERSION 3.0)
+#set(CMAKE_INSTALL_PREFIX /usr)
+file(GLOB CS "*.c")
+add_executable(${PROJECT_NAME} ${CS})
+install(TARGETS ${PROJECT_NAME} DESTINATION bin)
